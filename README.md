@@ -61,11 +61,11 @@ Para esta práctica se usarán los siguientes nodos:
         En el campo Server colocar la IP
         Oprimir Add
         En el campo Topic poner **codigoIot/Mor/mqtt/flow4** (para pruebas con servidor público) o **codigoIoT/mosquitto** (para pruebas locales)
-        hacer clic en Done
+        clic en Done
 
  - Doble clic nodo json
         Action: Siempre convertir a objeto JavaScript
-        hacer clic en Done
+        clic en Done
 
  - Doble clic en el primer nodo function
         Cambiar el nombre a Temperatura
@@ -101,7 +101,7 @@ Para esta práctica se usarán los siguientes nodos:
         Rangos 2 a 38, seleccionar de acuerdo a donde nos encontremos
         Cambiar color azul-frio 2-18
         Verde 18-26
-        Done
+        clic en Done
 
  - Doble clic en el nodo gauge que está conectado al nodo humedad
         Seleccionar grupo humedad
@@ -109,7 +109,14 @@ Para esta práctica se usarán los siguientes nodos:
         Tipo : level
         Units: %
         min 0 max 100 (de acuerdo al rango del sensor)
-        Done
+        clic en Done
+
+ - Conectar los nodos **function** temperatura y humedad al nodo **chart**
+ - Agregar un nuevo grupo para el nodo histórico llamado HistoricoLocal
+ - Dobleclic en el nodo chart
+        Label: Historico local
+        x-axis: 20 min
+        y-xis: 0 -100
 
  - Oprimir Deploy
   
@@ -119,9 +126,10 @@ Para esta práctica se usarán los siguientes nodos:
 Los resultados de la ejecución se pueden visualizar en la dirección del [dashboard](http://localhost:1880/ui/) de **Node-RED**
 
 La siguiente imagen muestra el flujo realizado en **Node-Red**
-![](https://github.com/rvnava/flow4-g10/main/Dashboard_temp_hum.png)
+![](https://github.com/rvnava/flow4-g10/blob/main/Dashboard_temp_hum.png?raw=true)
+
 La siguiente imagen muestra el flujo realizado en **Node-Red**
-![](https://github.com/rvnava/flow4-g10/main/Flujo4.png)
+![](https://github.com/rvnava/flow4-g10/blob/main/Flujo4.png?raw=true)
 
 ## Evidencias
 
